@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menuBarra{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:50%;/*espaciado*/
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    cursor: pointer;
+}
+
+.menuBarra span{
+    display: block;/*tipo bloque*/
+    width: 100%;
+    height: 2px;
+    background-color: blueviolet;
+    margin-top: 6px;/*separacion*/
+    transition: all 600ms;/*para que se vea la transicion*/
+    transform-origin: 0px 100%;/*se nota que se mueve*/
+}
+.fila1Animacion{
+    transform: rotate(35deg) translate(-2px, 1px);
+
+}
+
+.fila3Animacion{
+    transform: rotate(-35deg) translate(-4px, -2px);
+}
+
+.fila2Animacion{/*se llama desde script*/
+    opacity: 0;
+    margin-left: -35px;
+}
